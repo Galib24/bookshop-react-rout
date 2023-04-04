@@ -24,7 +24,7 @@ const Header = () => {
           <li>
             <NavLink
               to='/'
-              className={({ isActive }) => (isActive ? 'bg-green-500 rounded-xl' : 'default')}
+              className={({ isActive }) => (isActive ? 'active' : 'default')}
             >
               Home
             </NavLink>
@@ -32,7 +32,7 @@ const Header = () => {
           <li>
             <NavLink
               to='/books'
-              className={({ isActive }) => (isActive ? 'bg-red-500 rounded-xl' : 'default')}
+              className={({ isActive }) => (isActive ? 'active' : 'default')}
             >
               Books
             </NavLink>
@@ -40,7 +40,7 @@ const Header = () => {
           <li>
             <NavLink
               to='/about'
-              className={({ isActive }) => (isActive ? 'bg-blue-500 rounded-xl' : 'default')}
+              className={({ isActive }) => (isActive ? 'active' : 'default')}
             >
               About us
             </NavLink>
