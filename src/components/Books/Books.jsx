@@ -16,7 +16,7 @@ const Books = () => {
           text-gray-300 absolute inset-0 rounded flex flex-col'>
             <p>{book.title}</p>
             <br />
-            <p>{book.subtitle}</p>
+            <p>{book.subtitle.substring(0, 45)}...</p>
             <br />
             <p className='mt-auto'>price: {book.price}</p>
          </div>
