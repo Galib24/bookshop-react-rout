@@ -4,7 +4,8 @@ import React from 'react'
 import { ShoppingCartIcon } from '@heroicons/react/24/solid'
 import { Link, useNavigation } from 'react-router-dom'
 import LoadingSpinner from '../LoadingSpinner/LoadingSpinner'
-
+// import computer from '../lottie/computer.json'
+// import Lottie from 'react-lottie'
 const Home = () => {
 
     // Spinner added 
@@ -55,6 +56,8 @@ const Home = () => {
           <Lottie animationData={reader} loop={true} />
         </div>
       </div> */}
+
+      {/* <Lottie animationData={computer}></Lottie> */}
     </div>
   )
 }

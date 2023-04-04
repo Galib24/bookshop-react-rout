@@ -17,7 +17,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <Home/>,
+        element: <Home />,
       },
       {
         path: 'books',
@@ -27,7 +27,7 @@ const router = createBrowserRouter([
       {
         path: 'book/:id',
         element: <BookDetails></BookDetails>,
-        loader: ({params}) => fetch(`https://api.itbook.store/1.0/books/${params.id}`)
+        loader: ({ params }) => fetch(`https://api.itbook.store/1.0/books/${params.id}`)
       },
       {
         path: 'about',
@@ -42,4 +42,4 @@ const router = createBrowserRouter([
 
 ])
 ReactDOM.createRoot(document.getElementById('root')).render(
-<RouterProvider router={router}></RouterProvider>)
+  <RouterProvider router={router}></RouterProvider>)
